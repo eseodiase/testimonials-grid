@@ -1,0 +1,51 @@
+/* 
+ Author: Ese Odiase
+ */
+ 
+   /* Google fonts */
+   @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+ /* CSS custom properties */
+ :root{
+   /* Primary colors */
+   --purple-50: hsl(260, 100%, 95%);
+   --purple-300: hsl(264, 82%, 80%);
+   --purple-500: hsl(263, 55%, 52%);
+
+   /* Neutral */
+   --white: hsl(0, 0%, 100%);
+   --grey-100: hsl(214, 17%, 92%);
+   --grey-200: hsl(0, 0%, 81%);
+   --grey-400: hsl(224, 10%, 45%);
+   --grey-500: hsl(217, 19%, 35%);
+   --gark-blue: hsl(219, 29%, 14%);
+   --black: hsl(0, 0%, 7%);
+   --blue: hsl(228, 45%, 44%);
+
+   /* font sizes */
+   --primary-font: 0.8125rem;
+   --h2-size: ;
+   --h3-size: ;
+   --a: 0.6875rem;
+ }
+ 
+ /* Mobile first workflow */
+ html, 
+ body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Barlow Semi Condensed', sans-serif;
+ }
+ 
+ /* Breakpoint */
+ @media (min-width: 62rem) {
+   
+ }
+ 
+ .attribution { 
+   font-size: var(--a); 
+   text-align: center; 
+ }
+ .attribution a { 
+   color: var(--blue);
+ }
