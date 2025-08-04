@@ -1,73 +1,69 @@
 /* 
  Author: Ese Odiase
  */
- 
-   /* Google fonts */
-   @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
- 
- /* CSS custom properties */
- :root{
-   /* Primary colors */
-   --purple-50: hsl(260, 100%, 95%);
-   --purple-300: hsl(264, 82%, 80%);
-   --purple-500: hsl(263, 55%, 52%);
 
-   /* Neutral */
-   --white: hsl(0, 0%, 100%);
-   --grey-100: hsl(214, 17%, 92%);
-   --grey-200: hsl(0, 0%, 81%);
-   --grey-400: hsl(224, 10%, 45%);
-   --grey-500: hsl(217, 19%, 35%);
-   --dark-blue: hsl(219, 29%, 14%);
-   --black: hsl(0, 0%, 7%);
-   --blue: hsl(228, 45%, 44%);
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-   /* font sizes */
-   --primary-font: calc(0.875rem + 0.02vw);
-   --h2-size: calc(1.29rem + 0.02vw);
-   --h3-size: 1rem;
-   --a: 0.6875rem;
-   
-   /* Border radius */
-   --card-radius: 0.5rem;
-   --image-radius: 50%;
-   
-   /* Box shadow */
-   --shadow: 40px 40px 32px #cccccc;
- }
- 
- /* Mobile first workflow */
- html, 
- body {
-   margin: 0;
-   padding: 0;
-   background: var(--grey-100);
-   font-family: 'Barlow Semi Condensed', sans-serif;
-   font-size: var(--primary-font);
-   font-weight: 500;
-   line-height: 1.6;
- }
- 
-  main {
-    margin-block-start: 60px;
-    display: grid;
-    align-items: center;
-    min-height: 100vh;
+/* CSS custom properties */
+:root {
+  /* Primary colors */
+  --purple-50: hsl(260, 100%, 95%);
+  --purple-300: hsl(264, 82%, 80%);
+  --purple-500: hsl(263, 55%, 52%);
+  
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --grey-100: hsl(214, 17%, 92%);
+  --grey-200: hsl(0, 0%, 81%);
+  --grey-400: hsl(224, 10%, 45%);
+  --grey-500: hsl(217, 19%, 35%);
+  --dark-blue: hsl(219, 29%, 14%);
+  --black: hsl(0, 0%, 7%);
+  --blue: hsl(228, 45%, 44%);
+  
+  /* font sizes */
+  --primary-font: calc(0.875rem + 0.02vw);
+  --h2-size: calc(1.29rem + 0.02vw);
+  --h3-size: 1rem;
+  --a: 0.6875rem;
+  
+  /* Border radius */
+  --card-radius: 0.5rem;
+  --image-radius: 50%;
+  
+  /* Box shadow */
+  --shadow: 2.5rem 2.5rem 2rem #cccccc;
+}
+
+/* Mobile first workflow */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--grey-100);
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: var(--primary-font);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+main {
+  margin-block-start: 3.75rem;
+  display: grid;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .grid-container {
-    display: grid;
-    gap: 30px;
-    padding: 10px;
-    margin-inline: 25px;
-}
-
-.grid-container > div {
-    padding: 10px;
+  display: grid;
+  gap: 1.875rem;
+  padding: 0.625rem;
+  margin-inline: 1.5625rem;
 }
 
 #main-heading {
-    display: none;
+  display: none;
 }
 
 .grid1 {
@@ -106,12 +102,12 @@
   -moz-box-shadow: var(--shadow);
 }
 
-article img, 
+article img,
 article h2,
 article h3,
 article p {
-  margin-inline: 30px;
-  margin-block: 30px;
+  margin-inline: 1.875rem;
+  margin-block: 1.875rem;
 }
 
 article h3 {
@@ -130,15 +126,15 @@ article h2 {
 }
 
 .avatar {
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
   border-radius: var(--image-radius);
   border: 0.125rem solid var(--purple-300);
 }
 
 .user {
   align-self: center;
-  margin-inline-start: -45px;
+  margin-inline-start: -2.8125rem;
 }
 
 .username,
@@ -147,45 +143,48 @@ article h2 {
 }
 
 .status {
-  margin-block-start: -12px;
+  margin-block-start: -0.75rem;
 }
 
- /* Breakpoint large devices */
- @media (min-width: 48rem) { /**/
- main {
-   margin-inline: 150px;
- }
- 
-.grid-container {
+/* Breakpoint for medium devices */
+@media (min-width: 37.5rem){
+  main {
+    margin-block: 0;
+    margin-inline: 9.375rem;
+}
+}
+
+/* Breakpoint large devices */
+@media (min-width: 62rem) {
+  main {
+    margin-inline: 50px;
+  }
+  
+  .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 10px;
-    padding: 10px;
-}
-
-.grid-container > div {
-    padding: 10px;
-}
-
-.grid1 {
+  }
+  
+  .grid1 {
     grid-column: 1 / span 2;
-}
-
-.grid4 {
+  }
+  
+  .grid4 {
     grid-column: 2 / span 2;
-}
-
-.grid5 {
+  }
+  
+  .grid5 {
     grid-column: 4;
     grid-row: 1 / span 2;
+  }
+  
 }
 
- }
- 
- .attribution { 
-   font-size: var(--a); 
-   text-align: center; 
- }
- .attribution a { 
-   color: var(--blue);
- }
+.attribution {
+  font-size: var(--a);
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--blue);
+}
