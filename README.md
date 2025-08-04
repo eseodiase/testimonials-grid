@@ -73,7 +73,7 @@ Next on my bucket list is to start the Advanced CSS Techniques available on fron
 
 ### Useful resources
 
-- [Frontend Mentor](https://www.frontendmentor.io/learning-paths) - Special learning pathway suitable for newbies, junior, intermediate, and advance frontend developers
+- [Frontend Mentor Learning Paths](https://www.frontendmentor.io/learning-paths) - Special learning pathway suitable for newbies, junior, intermediate, and advance frontend developers
 - [Spck Editor Documentation](https://spck.io/documentation) - Essential for mobile development setup and React SystemJS practice
 - [w3schools CSS Grid Item](https://www.w3schools.com/css/css_grid_item.asp) - Multiple columns and rows idea
 - [Responsive Design Checker](https://www.responsivedesignchecker.com) - Useful for responsive testing

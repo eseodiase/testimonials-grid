@@ -61,7 +61,8 @@ main {
   gap: 1.875rem;
 }
 
-#main-heading {
+.main-heading,
+#section-heading{
   display: none;
 }
 
