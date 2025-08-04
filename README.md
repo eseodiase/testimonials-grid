@@ -14,7 +14,6 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -29,6 +28,8 @@ Users should be able to:
 - [Desktop View](./src/screenshot/desktop-view.jpg)
 - [Mobile View 1](./src/screenshot/mobile-view-1.jpg)
 - [Mobile View 2](./src/screenshot/mobile-view-2.jpg)
+- - [Mobile View 3](./src/screenshot/mobile-view-3.jpg)
+- [Mobile View 4](./src/screenshot/mobile-view-4.jpg)
 
 ### Links
 
@@ -43,31 +44,32 @@ Users should be able to:
 - CSS custom properties
 - Accessibility
 - CSS Grid
+- CSS Flexbox
 - Mobile-first workflow
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+With this project, I have started improving on my CSS Grid styling!
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+/* Proud of this: */
+.grid1 {
+    grid-column: 1 / span 2;
 }
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+
+.grid4 {
+    grid-column: 2 / span 2;
+}
+
+.grid5 {
+    grid-column: 4;
+    grid-row: 1 / span 2;
 }
 ```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+Next on my bucket list is to start the Advanced CSS Techniques available on frontendmentor.io learning paths!
 
 ### Useful resources
 
@@ -80,8 +82,4 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - LinkedIn - [Ese Odiase](https://ng.linkedin.com/in/ese-g-odiase-220576196)
 - Frontend Mentor - [@eseodiase](https://www.frontendmentor.io/profile/eseodiase)
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
 

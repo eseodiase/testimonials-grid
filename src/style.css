@@ -18,15 +18,22 @@
    --grey-200: hsl(0, 0%, 81%);
    --grey-400: hsl(224, 10%, 45%);
    --grey-500: hsl(217, 19%, 35%);
-   --gark-blue: hsl(219, 29%, 14%);
+   --dark-blue: hsl(219, 29%, 14%);
    --black: hsl(0, 0%, 7%);
    --blue: hsl(228, 45%, 44%);
 
    /* font sizes */
-   --primary-font: 0.8125rem;
-   --h2-size: ;
-   --h3-size: ;
+   --primary-font: calc(0.875rem + 0.02vw);
+   --h2-size: calc(1.29rem + 0.02vw);
+   --h3-size: 1rem;
    --a: 0.6875rem;
+   
+   /* Border radius */
+   --card-radius: 0.5rem;
+   --image-radius: 50%;
+   
+   /* Box shadow */
+   --shadow: 40px 40px 32px #cccccc;
  }
  
  /* Mobile first workflow */
@@ -34,12 +41,145 @@
  body {
    margin: 0;
    padding: 0;
+   background: var(--grey-100);
    font-family: 'Barlow Semi Condensed', sans-serif;
+   font-size: var(--primary-font);
+   font-weight: 500;
+   line-height: 1.6;
  }
  
- /* Breakpoint */
- @media (min-width: 62rem) {
-   
+  main {
+    margin-block-start: 60px;
+    display: grid;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    gap: 30px;
+    padding: 10px;
+    margin-inline: 25px;
+}
+
+.grid-container > div {
+    padding: 10px;
+}
+
+#main-heading {
+    display: none;
+}
+
+.grid1 {
+  background: var(--purple-500);
+  color: var(--purple-50);
+}
+
+.grid2 {
+  background: var(--grey-500);
+  color: var(--white);
+}
+
+.grid3 {
+  background: var(--white);
+  color: var(--black);
+}
+
+.grid4 {
+  background: var(--dark-blue);
+  color: var(--white);
+}
+
+.grid5 {
+  background: var(--white);
+  color: var(--black);
+}
+
+.grid1,
+.grid2,
+.grid3,
+.grid4,
+.grid5 {
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow);
+  -webkit-box-shadow: var(--shadow);
+  -moz-box-shadow: var(--shadow);
+}
+
+article img, 
+article h2,
+article h3,
+article p {
+  margin-inline: 30px;
+  margin-block: 30px;
+}
+
+article h3 {
+  font-size: var(--h3-size);
+  font-weight: 600;
+}
+
+article h2 {
+  font-size: var(--h2-size);
+  margin-block-start: 0;
+}
+
+.user-info {
+  display: flex;
+  align-items: flex-start;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: var(--image-radius);
+  border: 0.125rem solid var(--purple-300);
+}
+
+.user {
+  align-self: center;
+  margin-inline-start: -45px;
+}
+
+.username,
+.status {
+  line-height: 0;
+}
+
+.status {
+  margin-block-start: -12px;
+}
+
+ /* Breakpoint large devices */
+ @media (min-width: 48rem) { /**/
+ main {
+   margin-inline: 150px;
+ }
+ 
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-container > div {
+    padding: 10px;
+}
+
+.grid1 {
+    grid-column: 1 / span 2;
+}
+
+.grid4 {
+    grid-column: 2 / span 2;
+}
+
+.grid5 {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+}
+
  }
  
  .attribution { 
