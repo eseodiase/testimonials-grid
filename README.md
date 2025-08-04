@@ -28,7 +28,7 @@ Users should be able to:
 - [Desktop View](./src/screenshot/desktop-view.jpg)
 - [Mobile View 1](./src/screenshot/mobile-view-1.jpg)
 - [Mobile View 2](./src/screenshot/mobile-view-2.jpg)
-- - [Mobile View 3](./src/screenshot/mobile-view-3.jpg)
+- [Mobile View 3](./src/screenshot/mobile-view-3.jpg)
 - [Mobile View 4](./src/screenshot/mobile-view-4.jpg)
 
 ### Links
